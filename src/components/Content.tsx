@@ -60,7 +60,7 @@ const Content: React.FC = () => {
                     hidden: { opacity: 1, y: 80 },
                   }}
                 >
-                  <div className="items-center hidden px-4 py-2 mx-2 mt-6 rounded-lg cursor-pointer md:flex w-52 bg-gray-50 md:m-4 hover:scale-125 md:w-48">
+                  <div className="items-center hidden px-4 py-2 mx-2 mt-6 rounded-lg cursor-pointer lg:flex w-52 bg-gray-50 lg:m-4 hover:scale-125 lg:w-48">
                     <img alt="" src={el.link} className="w-12" />
                     <h4 className="ml-4 text-md">{el.name}</h4>
                   </div>

@@ -1,7 +1,12 @@
+import imgReact from "../assets/skills/react.svg";
+import imgWordpress from "../assets/skills/wordpress.svg";
+import imgMaterial from "../assets/skills/materialui.svg";
+import imgPostgres from "../assets/skills/postgresql.svg"
+
 export const techStack = [
   {
     name: "React",
-    link: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+    link: imgReact,
   },
   {
     name: "Javascript",
@@ -25,8 +30,8 @@ export const techStack = [
   //},
 
   {
-    name: "Postman",
-    link: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
+    name: "Wordpress",
+    link: imgWordpress,
   },
 
   {
@@ -51,8 +56,8 @@ export const techStack = [
     link: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
   },
   {
-    name: "MySQl",
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg",
+    name: "MaterialUI",
+    link: imgMaterial,
   },
 
   {
@@ -60,8 +65,8 @@ export const techStack = [
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg",
   },
   {
-    name: "Github",
-    link: "https://www.svgrepo.com/show/512317/github-142.svg",
+    name: "Postgresql",
+    link: imgPostgres,
   },
   {
     name: "Tailwind CSS",

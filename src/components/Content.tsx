@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "../assets/images/dan.png";
-import asmi from "../assets/images/dan.png";
-import quiz from "../assets/images/dan.png";
-import comfy from "../assets/images/dan.png";
+import imgKongodev from "../assets/images/kongodev.png";
+import imgCatfish from "../assets/images/catfish.png";
+import imgClonetwitter from "../assets/images/twitterclone.png";
 import MyInfo from "./MyInfo";
 import { motion } from "framer-motion";
 import { techStack } from "../utils/constants.ts";
@@ -79,32 +79,43 @@ const Content: React.FC = () => {
             <h1 className="pr-2 text-3xl font-bold sm:pr-5">💻 Mes Oeuvres</h1>
             <div className="flex-grow border-t border-black dark:border-white border-1"></div>
             <a
-              href="https://github.com/Bharat-bhandari"
+              href="https://github.com/DanielMwamba"
               className="pl-2 text-sm text-right sm:pl-5 hover:text-link-color"
             >
               Visit Archive
             </a>
           </div>
+
+          <p>Voici quelques projets que j'ai réalisés récemment</p>
           <div className="flex flex-col mt-12 space-y-12 transition-all duration-500 delay-300 translate-y-0 motion-reduce:transition-none opacity-1 blur-0">
             <div className="flex flex-col transition-opacity duration-500 lg:grid lg:grid-cols-2 lg:gap-x-4 motion-reduce:transition-none opacity-1">
               <div className="flex flex-col space-y-4 text-left">
                 <h3 className="pb-2 text-xl font-extrabold">KongoDev</h3>
                 <p className="text-slate-500 dark:text-slate-300">
-                  Ce projet m'a beaucoup dans mon parcours de développeur web,
-                  car il représente le premier site Web que j'ai conceptualisé
-                  et exécuté entièrement, de la conception au développement.
-                  Utiliser mon maîtrise de la pile PERN, j'ai non seulement
-                  amélioré ma compétences techniques, mais également acquis des
-                  connaissances inestimables sur la gestion des autorisations,
-                  les acces processus de déploiement dans des scénarios réels,
-                  en tirant parti d'AWS services.
+                  Kongodev est un projet que je continu de travailler, ce projet
+                  est destiné au dévellopeur congolais pour partager leurs
+                  connaissances et leurs expériences en tant que développeur. Ce
+                  projet est réalisé avec React pour la partie frontend et
+                  Node.js avec Express pour le backend. J'ai implémenté une API
+                  RESTful. Au cours de ce projet, j'ai approfondi mes
+                  compétences à la gestion d'état avec Redux et 
+                  L'Authentification des utilisateurs.
                 </p>
                 <p className="text-slate-600">
                   React, Postgresql ,Express, Node
                 </p>
                 <div className="flex items-center space-x-6 text-slate-400">
                   <a
-                    href="https://asmi.life"
+                    href="https://github.com/DanielMwamba/KongoDev"
+                    className="flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color"
+                    target="_blank"
+                  >
+                    <span className="flex items-center space-x-2">
+                      <FaGithub className="svg-inline--fa fa-github h-7 w-7" />
+                    </span>
+                  </a>
+                  <a
+                    href="https://kongodev.netlify.app"
                     className="flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color"
                     target="_blank"
                   >
@@ -116,12 +127,12 @@ const Content: React.FC = () => {
                 </div>
               </div>
               <div className="order-first pb-4 lg:pb-0 lg:order-none lg:block">
-                <a href="https://asmi.life" target="_blank">
+                <a href="https://kongodev.netlify.app" target="_blank">
                   <img
-                    src={asmi}
+                    src={imgKongodev}
                     className="mb-32 transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105"
                     loading="lazy"
-                    alt="asmi"
+                    alt="kongodev"
                   />
                 </a>
               </div>
@@ -134,10 +145,10 @@ const Content: React.FC = () => {
                   target="_blank"
                 >
                   <img
-                    src={comfy}
+                    src={imgClonetwitter}
                     className="mb-32 transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105"
                     loading="lazy"
-                    alt="Ecommerce"
+                    alt="Twitter Clone"
                   />
                 </a>
               </div>
@@ -154,7 +165,7 @@ const Content: React.FC = () => {
                 <p className="text-slate-600">React, Javascript, HTML, CSS</p>
                 <div className="flex items-center space-x-6 text-slate-400 lg:justify-end">
                   <a
-                    href="https://github.com/Bharat-bhandari/React-Ecommerce-Web"
+                    href="https://github.com/DanielMwamba/"
                     className="flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color"
                     target="_blank"
                   >
@@ -163,7 +174,7 @@ const Content: React.FC = () => {
                     </span>
                   </a>
                   <a
-                    href="https://brokebros-react-ecommerce.vercel.app/"
+                    href="https://cloning-twitter.netlify.app/"
                     className="flex items-center space-x-2 hover:text-[#4305ba] focus:text-link-color active:text-link-color"
                     target="_blank"
                   >
@@ -203,7 +214,7 @@ const Content: React.FC = () => {
               <div className="order-first pb-4 lg:pb-0 lg:order-none lg:block">
                 <a href="https://brokebros-quizapp-react.vercel.app/">
                   <img
-                    src={quiz}
+                    src={imgCatfish}
                     className="mb-32 transition-transform duration-300 ease-in-out rounded-md shadow-md hover:scale-105"
                     loading="lazy"
                     alt="Javascript Quiz App"
@@ -211,15 +222,60 @@ const Content: React.FC = () => {
                 </a>
               </div>
             </div>
+            <button className="px-6 py-2 mx-auto mt-10 transition duration-300 ease-in-out bg-transparent border shadow-sm w-52 border-button-color text-button-color shadow-button-color hover:bg-button-color hover:text-white focus:bg-button-color focus:text-white active:bg-button-color active:text-white">
+              <a href="https://github.com/DanielMwamba" target="_blank">
+                Voir plus
+              </a>
+            </button>
           </div>
         </section>
 
-        <section className="w-full min-h-screen" id="contact">
+        <section className="flex flex-col w-full min-h-screen" id="contact">
           <div className="relative flex items-center py-5 transition-all duration-500 translate-y-0 opacity-1 blur-0 motion-reduce:transition-none">
-            <h1 className="pr-5 text-3xl font-bold">🤙 Contactez Moi</h1>
+            <div className="flex-grow border-t border-black dark:border-white border-1"></div>
+            <h1 className="px-5 text-3xl font-bold">📭 Contact</h1>
             <div className="flex-grow border-t border-black dark:border-white border-1"></div>
           </div>
+          <div className="flex flex-col my-auto transition-all duration-500 delay-300 translate-y-0 motion-reduce:transition-none opacity-1 blur-0">
+            <div className="mx-auto space-y-8">
+              <h1 className="text-3xl font-extrabold text-center">
+                Prenez contact
+              </h1>
+              <p className="text-slate-500 dark:text-slate-300">
+                Actuellement à la recherche de stages ou emploi pour le poste de
+                développeur web Full-stack..
+                <br />
+              </p>
+              <p className="text-slate-500 dark:text-slate-300">
+                Vous cherchez également à former une équipe pour des projets et
+                des idées de démarrage ou simplement pour établir des relations
+                professionnelles.
+                <br />
+              </p>
+              <div className="flex flex-col items-center justify-center space-y-5 sm:flex-row sm:space-x-5">
+                <a
+                  href="https://www.linkedin.com/in/"
+                  target="_blank"
+                >
+                  <button className="px-6 py-2 duration-300 bg-transparent border shadow-sm border-button-color shadow-button-color text-button-color hover:text-white hover:bg-button-color focus:bg-button-color focus:text-white active:bg-button-color active:text-white">
+                    Ecrivez moi
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
         </section>
+        {/* Contact */}
+
+        <footer className="hidden mb-5 text-center md:block">
+          <a
+            href="https://github.com/DanielMwamba"
+            className="hover:text-link-color"
+            target="_blank"
+          >
+            Code available on Github 👾
+          </a>
+        </footer>
       </div>
     </div>
   );

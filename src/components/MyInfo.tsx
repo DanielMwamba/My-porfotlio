@@ -1,66 +1,20 @@
 import React from "react";
 
 // Définition de l'interface pour les données HelloWorld
-interface HelloWorldType {
-  _id: string;
-  name: string;
-  developer: boolean;
-  technologies: string[];
-  interests: string[];
-}
-
-// Définition des données HelloWorld
-const HelloWorld: HelloWorldType = {
-  _id: "127.0.0.1",
-  name: "Daniel Mwamba",
-  developer: true,
-  technologies: ["js", "react", "node", "express", "..."],
-  interests: ["PERN", "AI", "DevOps", "Aws", "..."],
-};
 
 const MyInfo: React.FC = () => {
   return (
     <div className="relative p-4 rounded-lg bg-custom">
       <div className="absolute top-6 left-12 blinking-rectangle"></div>
-      <pre className="font-mono text-sm text-gray-400 md:text-lg">
-        <span className="text-yellow-300">const HelloWorld = </span>
-        {`{\n  `}
-        <span className="text-green-300">"_id": </span>
-        <span className="text-white">"{HelloWorld._id}",</span>
-        {`\n  `}
-        <span className="text-green-300">"name": </span>
-        <span className="text-white">"{HelloWorld.name}",</span>
-        {`\n  `}
-        <span className="text-green-300">"developer": </span>
-        <span className="text-yellow-300">
-          {HelloWorld.developer.toString()},
-        </span>
-        {`\n  `}
-        <span className="text-green-300">"technologies": </span>
-        <span className="flex lg:inline-block">
-          <span className="text-white">[</span>
-          {HelloWorld.technologies.map((tech, index) => (
-            <span key={index} className="text-white">
-              "{tech}"{index === HelloWorld.technologies.length - 1 ? "" : ","}
-            </span>
-          ))}
-          <span className="text-white">],</span>
-        </span>
-        <span className="hidden lg:inline">{`\n`}</span>
-        <span>{`  `}</span>
-        <span className="text-green-300">"interests": </span>
-        <span className="flex lg:inline-block">
-          <span className="text-white">[</span>
-          {HelloWorld.interests.map((interest, index) => (
-            <span key={index} className="text-white">
-              "{interest}"{index === HelloWorld.interests.length - 1 ? "" : ","}
-            </span>
-          ))}
-          <span className="text-white">],</span>
-        </span>
-        <span className="hidden lg:inline">{`\n  `}</span>
-        <span>{`}`}</span>
-      </pre>
+      <div className="font-mono text-sm text-gray-400 md:text-lg">
+        SALUT ! Je suis Daniel Mwamba (DM).{" "}
+        <span className="text-yellow-300">Dévellopeur Full Stack</span> avec un
+        diplôme en informatique et une expérience en devellopement web. Je suis toujours en train
+        de développer mes compétences et d'apprendre quelque chose de nouveau.
+        J'ai une soif de connaissances et un désir de comprendre comment les
+        choses fonctionnent ; je suis un homme de contact, un bricoleur, un
+        pasionnée de la technologie.
+      </div>
     </div>
   );
 };

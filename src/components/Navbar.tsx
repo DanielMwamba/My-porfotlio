@@ -5,7 +5,7 @@ import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 
 const Navbar: React.FC = () => {
   const [activeNav, setActiveNav] = useState<string>("#");
-  const [theme, setTheme] = useState<string>("light");
+  const [theme, setTheme] = useState<string>("dark");
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
   const [scrollingDown, setScrollingDown] = useState<boolean>(false);
 
@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
               <div className="flex items-center space-x-2 py-4 md:py-1 drop-shadow-lg bg-gradient-to-r from-[#fa3205] to-[#5301c5] bg-clip-text text-transparent">
                 <p>&lt;</p>
                 <p className="text-5xl md:text-7xl" id="custom-logo">
-                  D.M.C
+                  D.M
                 </p>
                 <p>/&gt;</p>
               </div>
@@ -106,7 +106,7 @@ const Navbar: React.FC = () => {
                 href="#work"
                 className="router-link-active router-link-exact-active block py-2 pl-3 pr-4 hover:text-[#4305ba]"
               >
-                Mes Réalisations
+                Réalisations
               </a>
             </li>
             <li className="transition-all motion-reduce:transition-none duration-500 delay-[200ms] translate-y-0 opacity-1">
@@ -114,12 +114,12 @@ const Navbar: React.FC = () => {
                 href="#contact"
                 className="router-link-active router-link-exact-active block py-2 pl-3 pr-4 hover:text-[#4305ba]"
               >
-                Contactez Moi
+                Contact
               </a>
             </li>
             <li className="transition-all motion-reduce:transition-none duration-500 delay-[250ms] translate-y-0 opacity-1">
               <a
-                href="https://drive.google.com/file/d/1i_9Q5Zwwjpam9jeUDrPFPV52qAxjquie/view?usp=sharing"
+                href="https://drive.google.com/file/d/1RU0qxZMKIVhSkotsjQ2a02aExNxszrmt/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -152,7 +152,7 @@ const Navbar: React.FC = () => {
               href="#about"
               className="block py-5 router-link-active router-link-exact-active hover:text-[#4305ba]"
             >
-              😎 A propos
+              😎 À propos
             </a>
           </li>
           <li>

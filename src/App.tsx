@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
+import Loading from "./components/Loading";
 
 const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -25,7 +26,7 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen text-base bg-white overscroll-contain dark:bg-slate-900 dark:text-slate-300 md:text-xl">
       {isLoading ? (
-        <p>chargement</p>
+        <Loading />
       ) : (
         <>
           {" "}

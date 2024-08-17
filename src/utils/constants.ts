@@ -1,7 +1,8 @@
 import imgReact from "../assets/skills/react.svg";
 import imgWordpress from "../assets/skills/wordpress.svg";
 import imgMaterial from "../assets/skills/materialui.svg";
-import imgPostgres from "../assets/skills/postgresql.svg"
+import imgPostgres from "../assets/skills/postgresql.svg";
+import imgFigma from "../assets/skills/figma.svg";
 
 export const techStack = [
   {
@@ -32,6 +33,11 @@ export const techStack = [
   {
     name: "Wordpress",
     link: imgWordpress,
+  },
+
+  {
+    name: "Figma",
+    link: imgFigma,
   },
 
   {

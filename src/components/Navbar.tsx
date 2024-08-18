@@ -182,7 +182,7 @@ const Navbar: React.FC = () => {
           </li>
           <li>
             <a
-              href="https://drive.google.com/file/d/1i_9Q5Zwwjpam9jeUDrPFPV52qAxjquie/view?usp=sharing"
+              href="https://drive.google.com/file/d/1RU0qxZMKIVhSkotsjQ2a02aExNxszrmt/view"
               target="_blank"
               rel="noopener noreferrer"
             >

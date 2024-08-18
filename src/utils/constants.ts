@@ -36,11 +36,6 @@ export const techStack = [
   },
 
   {
-    name: "Figma",
-    link: imgFigma,
-  },
-
-  {
     name: "HTML",
     link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
   },

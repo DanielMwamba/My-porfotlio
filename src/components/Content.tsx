@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../assets/images/dan.png";
+import Image from "../assets/images/profile.png";
 import imgKongodev from "../assets/images/kongodev.png";
 import imgCatfish from "../assets/images/catfish.png";
 import imgClonetwitter from "../assets/images/twitterclone.png";

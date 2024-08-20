@@ -22,7 +22,7 @@ const Content: React.FC = () => {
           className="min-h-[calc(100vh*0.80)] flex mb-52 justify-center"
           id="about"
         >
-          <div className="flex flex-col items-center m-auto space-x-0 space-y-7 md:space-y-0 md:space-x-7 lg:flex-row">
+          <div className="flex flex-col items-center mt-40 space-x-0 space-y-7 md:space-y-0 md:space-x-7 lg:flex-row">
             <img
               className="w-64 md:mb-6 h-64 md:w-96 md:h-96 lg:w-96 lg:h-96 rounded-full shadow-md transition-all motion-reduce:transition-none duration-500 delay-[400ms] translate-y-0 opacity-1 object-cover"
               src={Image}
@@ -43,7 +43,7 @@ const Content: React.FC = () => {
               travaillé récemment.
             </p>
 
-            <motion.div className="flex flex-wrap justify-between mt-8 text-sm font-medium text-black md:text-lg ">
+            <motion.div className="grid grid-cols-2 gap-10 mt-8 text-sm font-medium text-black md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-3">
               {techStack.map((el: TechStackItem, index: number) => (
                 <motion.div
                   key={index}
